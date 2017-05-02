@@ -1,0 +1,54 @@
+Aluno: (Coloque aqui o seu nome e matricula)
+Trabalho de Laboratorio de Sistemas Operacionais
+Professor: Alex Salgado
+1o. Semestre de 2017   Turno: ????
+--------------------------------------------------
+Com relação aos comandos do SO Linux, responda as perguntas abaixo:
+
+1 - Qual o comando linux para imprimir uma string na tela?
+Resposta: O comando ''echo'' faz voce imprimir uma string na tela.
+echo Ola Mundo!
+Ola Mundo!
+
+2 - Quais são os 3 comandos linux para mostrar o diretório corrente, 
+listar todos os arquivos da pasta atual e mudar de diretório?
+Resposta: Para mudar de diretorio usamos o comando cd.
+O comando ls, mostra todos os arquivos da pasta atual e o ls -l mostra tudo mais detalhado.
+Para mostrar o diretorio atual, o comando usado é pwd.
+
+3 - Existe um arquivo chamado access.log na sua pasta atual. Qual é o 
+comando para exibir as últimas 3 linhas deste arquivo?
+Resposta: Usamos o tail.
+trabalho1-labso/trabalho/log$ tail -n3 access.log
+
+4 - Crie 3 arquivos em branco que comecem com seu nome e termina com uma sequencia 1, 2 e 3. 
+Ex.: alex1.txt, alex2.txt, alex3.txt. Que comandos você utilizou?
+Resposta: 
+touch vitoria1.txt
+touch vitoria2.txt
+touch vitoria3.txt
+
+5 - Crie 1 pasta com seu nome+diadenascimento (ex.:alex25) e copie os 3 arquivos criandos 
+anteriormente para esta pasta.
+Resposta:
+mkdir vitoria01
+cp vitoria1.txt vitoria2.txt vitoria3.txt vitoria01
+
+
+6 - A partir de sua pasta original, usando o comando find do linux, 
+diga quantos diretorios existem cujo nome começa com "pasta"?
+Resposta1 (comando linux usado):
+find trabalho/ -type d -name pasta*
+
+Resposta2 (numero de diretorios encontrados) : 
+4
+
+
+7 - Qual o comando linux para: 
+Extrair todos os enderecos IP dos arquivos 
+que começam com "access.log" imprimindo um endereço IP por linha.
+Resposta: 
+
+8 - listar o conteudo de seu diretorio e direcionar a saida 
+para o primeiro arquivo do item 4.
+ls > vitoria1.txt 
